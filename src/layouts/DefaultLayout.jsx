@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom';
 import Headers from '../components/Headers';
 import './DefaultLayout.css'
+import { Link, Outlet } from 'react-router-dom';
 
 const headersData = [
   { name: 'App', value: 'My Application' },
@@ -17,7 +17,8 @@ function DefaultLayout() {
         <Outlet /> {/* Qui verranno renderizzate le pagine */}
       </main>
       <footer>
-        My Application Foooter
+        My Application Footer
+        <Link to="/"> Home </Link> 
       </footer>
     </div>
   );

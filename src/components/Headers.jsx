@@ -1,12 +1,20 @@
+// import MoviePage from '../pages/MoviePage';
+import { Link } from 'react-router-dom';
+
 function Headers({ headers }) {
   return (
-    <div className="flex flex-col gap-2">
-      {headers.map((header, index) => (
-        <div key={index} className="flex items-center gap-2">
-          <span className="font-bold">{header.name}:</span>
-          <span>{header.value}</span>
+    <div className="d-flex gap-2 justify-content-between">   
+      <div className=" items-center gap-2">
+        <span className="font-bold">FILM</span>
+      </div>
+      <div className="d-flex gap-2">
+        <div>
+          <Link to="/">Home</Link>
         </div>
-      ))}
+        <div>
+          <Link to="/movie">MoviePage</Link>
+        </div>
+      </div>     
     </div>
   );
 }

@@ -25,3 +25,12 @@ footer {
     padding: 10px;
     color: white;
 }
+
+.w20 {
+    width: 20%;
+}
+
+.hcard {
+    height: 250px;
+    overflow: auto;
+}

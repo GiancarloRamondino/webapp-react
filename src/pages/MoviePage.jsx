@@ -1,16 +1,24 @@
+import { useParams, Link } from "react-router-dom";
+import movies from '../assets/movie';
 import MovieCard from '../components/MovieCard';
 
 function MoviePage() {
+  const { id } = useParams();
+  const film = movies.find(m => m.id === Number(id));
+
+  if (!film) {
+    return (
+      <div className="text-center mt-10">
+        <h2>Film non trovato</h2>
+        <Link to="/">Torna alla Home</Link>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold mb-4">Movie Page</h1>
-      <p className="text-lg text-gray-700 mb-6">This is the movie page content.</p>
-      <MovieCard
-        title="Inception"
-        description="A mind-bending thriller by Christopher Nolan."
-        imageUrl="https://m.media-amazon.com/images/I/51s+8pQbKRL._AC_SY445_.jpg"
-        review="A masterpiece of modern cinema, blending science fiction with psychological depth."
-      />
+    <div className="flex flex-col items-center bg-gray-100">
+      <MovieCard {...film} />
+      <Link to="/" className="mt-4 underline text-blue-600">Torna alla Home</Link>
     </div>
   );
 }

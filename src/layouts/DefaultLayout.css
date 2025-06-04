@@ -34,3 +34,8 @@ footer {
     height: 250px;
     overflow: auto;
 }
+
+.w-40 {
+    width: 200px;
+    height: 270px;
+}

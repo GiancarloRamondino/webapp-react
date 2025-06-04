@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import DettailMovies from '../components/DettailMovies';
 import axios from "axios";
 
+
 function MoviePage() {
   const { id } = useParams();
   const [film, setFilm] = useState(null);
@@ -40,7 +41,8 @@ function MoviePage() {
         genre={film.genre}
         image={film.image}
         release_year={film.release_year}
-      />
+        average_rating={film.average_rating}
+      />   
       <Link to="/" className="mt-4 underline text-blue-600">Torna alla Home</Link>
     </div>
   );

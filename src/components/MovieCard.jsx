@@ -2,7 +2,7 @@ function MovieCard({ title, image, release_year, genre }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center max-w-xs">
       <img
-        src={image || "https://via.placeholder.com/160x240?text=No+Image"}
+        src={"http://localhost:3001/image/"+image || "https://via.placeholder.com/160x240?text=No+Image"}
         alt={title || "Movie poster"}
         className="w-40 h-60 object-cover rounded mb-4"
       />

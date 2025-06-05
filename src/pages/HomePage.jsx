@@ -18,7 +18,7 @@ function HomePage() {
   
 
   return (
-    <div className="container d-flex flex-wrap justify-content-center gap-4 p-4">
+    <div className="container d-flex flex-wrap justify-content-center gap-4">
       {Array.isArray(movies) && movies.map((movie) => (
         <Link key={movie?.id} to={`/movie/${movie?.id}`} className="text-decoration-none">
           <MovieCard

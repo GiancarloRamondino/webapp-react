@@ -4,11 +4,11 @@ import { Link, Outlet } from 'react-router-dom';
 
 function DefaultLayout() {
   return (
-    <div className="flex flex-col vh vw">
+    <div  className="flex flex-col vh vw">
       <header> 
         <Headers />
       </header>
-      <main className="flex p-4 ">
+      <main className="flex">
         <Outlet /> {/* Qui verranno renderizzate le pagine */}         
       </main>
       <footer>

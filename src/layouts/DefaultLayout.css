@@ -35,7 +35,22 @@ footer {
     overflow: auto;
 }
 
-.w-40 {
+.w-card {
     width: 200px;
     height: 270px;
+}
+
+.w-dettail {
+    width: 200px;
+    height: 100%;
+}
+
+.p-6 {
+    padding: 6px;
+}
+
+
+.mt-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

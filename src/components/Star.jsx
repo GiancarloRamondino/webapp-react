@@ -18,9 +18,9 @@ function Star({ rating }) {
   });
 
   return (
-    <div className="flex items-center">
+    <>
       {stars}
-    </div>
+    </>
   );
 }
 

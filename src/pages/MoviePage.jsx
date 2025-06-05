@@ -43,7 +43,7 @@ function MoviePage() {
         release_year={film.release_year}
         average_rating={film.average_rating}
       />   
-      <Link to="/" className="mt-4 underline text-blue-600">Torna alla Home</Link>
+      <Link to="/" className="mt-4 underline text-blue-600 p-6">Torna alla Home</Link>
     </div>
   );
 }

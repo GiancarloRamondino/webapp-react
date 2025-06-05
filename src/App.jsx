@@ -3,6 +3,7 @@ import MoviePage from './pages/MoviePage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import  DefaultLayout  from './layouts/DefaultLayout.jsx'
+import CreateMoviePage from './pages/CreateMoviePage.jsx'
 
 function App() {
   // Questo è il componente principale che imposta il routing
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<DefaultLayout />}>
           <Route index element={<HomePage />} />
           <Route path="movie/:id" element={<MoviePage />} />
+          <Route path="movie/create" element={<CreateMoviePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

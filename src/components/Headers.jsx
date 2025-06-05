@@ -10,6 +10,7 @@ function Headers({ headers }) {
       <div className="d-flex gap-2">
         <div>
           <Link to="/">Home</Link>
+          <Link to="movie/create">Creazione Film</Link>
         </div>
       </div>     
     </div>
